@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PopUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iak-cK-Yqn">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="go" destination="BYZ-38-t0r" eventType="touchUpInside" id="vaY-aA-ots"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iak-cK-Yqn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7F0-bx-AJn"/>
+                            <constraint firstItem="Iak-cK-Yqn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KAT-7o-y2l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="NE7-7B-nxN" kind="popoverPresentation" identifier="go" popoverAnchorView="Iak-cK-Yqn" id="cYa-sk-3li">
+                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZzL-9d-lFy">
+            <objects>
+                <viewController id="NE7-7B-nxN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ajo-FO-BRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="YuG-Zs-ahj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t6N-b8-15w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbB-A8-IPl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960" y="275"/>
+        </scene>
+    </scenes>
+</document>
